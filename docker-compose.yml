@@ -1,0 +1,14 @@
+elasticsearch:
+  image: elasticsearch:5.0.2
+  ports:
+    - '9200:9200'
+app:
+  build: .
+  command: sh scripts/run.sh
+  environment:
+    NODE_ENV: development
+  links:
+    - elasticsearch
+  volumes:
+    - .:/usr/src/app
+
