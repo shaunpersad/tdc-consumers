@@ -19,16 +19,18 @@ module.exports = function createAffinitiesIndex(client, done) {
                     affinities_searchable: {
                         properties: {
                             name: {
-                                type: 'keyword'
+                                type: 'string',
+                                index: 'not_analyzed'
                             },
                             category: {
-                                type: 'keyword'
+                                type: 'string',
+                                index: 'not_analyzed'
                             },
                             name_searchable: {
-                                type: 'text'
+                                type: 'string'
                             },
                             category_searchable: {
-                                type: 'text'
+                                type: 'string'
                             }
                         }
                     }

@@ -23,7 +23,28 @@ module.exports = function importAttributes(client, done) {
         'MTFREQUENTMOBILEPURCHASERS': Number,
         'MTGAMERS': Number,
         'MTBUSINESSTRAVELER': Number,
-        'MTLIKELYTOUSEANINVESTMENTBROKE': Number
+        'MTLIKELYTOUSEANINVESTMENTBROKE': Number,
+        //new
+        'OCCUPATION': String,
+        'MTPETOWNERS': Number,
+        'MTAUTOLOANPURCHASERS': Number,
+        'HOBBIESWINES': String,
+        'BEVERAGESRECENCYOFPURCHASE': Number,
+        'FASHIONACCESSORIESANDBEAUTYQUI': Number,
+        'FASHIONACCESSORIESBEAUTYRECPUR': Number,
+        'SPORTSSPORTSPARTICIPATION': String,
+        'SPORTSANDOUTDOORRECENCYPURC': Number,
+        'MTPERSONALTRAVELER': Number,
+        'MTVACATIONSPENDERS': Number,
+        'MTINTERNATIONALTRAVELER': Number,
+        'B2BBUSINESSMARKETINGQUINTILE': Number,
+        'B2BBUSINESSMKTRECENCYPURCHASE': Number,
+        'MTFREQUENTONLINEMUSICPURCHASER': Number,
+        'MTONDEMANDMOVIESUBSCRIBERS': Number,
+        'MTWEARABLETECHNOLOGYUSERS': Number,
+        'MTHIGHENDSHOPPERS': Number,
+        'MUSICRB': String,
+        'MTBASKETBALLENTHUSIASTS': Number
     };
 
     let count = 0;

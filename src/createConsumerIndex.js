@@ -34,10 +34,12 @@ module.exports = function createConsumerIndex(client, done) {
                                 type: 'integer'
                             },
                             ADVANTAGETARGETINCOME20: {
-                                type: 'keyword'
+                                type: 'string',
+                                index: 'not_analyzed'
                             },
                             NICHES40: {
-                                type: 'keyword'
+                                type: 'string',
+                                index: 'not_analyzed'
                             },
                             MTVEHICLEPURCHASER: {
                                 type: 'integer'
@@ -67,6 +69,70 @@ module.exports = function createConsumerIndex(client, done) {
                                 type: 'integer'
                             },
                             MTLIKELYTOUSEANINVESTMENTBROKE: {
+                                type: 'integer'
+                            },
+                            OCCUPATION: {
+                                type: 'string',
+                                index: 'not_analyzed'
+                            },
+                            MTPETOWNERS: {
+                                type: 'integer'
+                            },
+                            MTAUTOLOANPURCHASERS: {
+                                type: 'integer'
+                            },
+                            HOBBIESWINES: {
+                                type: 'string',
+                                index: 'not_analyzed'
+                            },
+                            BEVERAGESRECENCYOFPURCHASE: {
+                                type: 'integer'
+                            },
+                            FASHIONACCESSORIESANDBEAUTYQUI: {
+                                type: 'integer'
+                            },
+                            FASHIONACCESSORIESBEAUTYRECPUR: {
+                                type: 'integer'
+                            },
+                            SPORTSSPORTSPARTICIPATION: {
+                                type: 'string',
+                                index: 'not_analyzed'
+                            },
+                            SPORTSANDOUTDOORRECENCYPURC: {
+                                type: 'integer'
+                            },
+                            MTPERSONALTRAVELER: {
+                                type: 'integer'
+                            },
+                            MTVACATIONSPENDERS: {
+                                type: 'integer'
+                            },
+                            MTINTERNATIONALTRAVELER: {
+                                type: 'integer'
+                            },
+                            B2BBUSINESSMARKETINGQUINTILE: {
+                                type: 'integer'
+                            },
+                            B2BBUSINESSMKTRECENCYPURCHASE: {
+                                type: 'integer'
+                            },
+                            MTFREQUENTONLINEMUSICPURCHASER: {
+                                type: 'integer'
+                            },
+                            MTONDEMANDMOVIESUBSCRIBERS: {
+                                type: 'integer'
+                            },
+                            MTWEARABLETECHNOLOGYUSERS: {
+                                type: 'integer'
+                            },
+                            MTHIGHENDSHOPPERS: {
+                                type: 'integer'
+                            },
+                            MUSICRB: {
+                                type: 'string',
+                                index: 'not_analyzed'
+                            },
+                            MTBASKETBALLENTHUSIASTS: {
                                 type: 'integer'
                             },
                             brand_cnn: {
@@ -109,7 +175,8 @@ module.exports = function createConsumerIndex(client, done) {
                                 type: 'boolean'
                             },
                             affinities: {
-                                type: 'keyword'
+                                type: 'string',
+                                index: 'not_analyzed'
                             },
                             affinities_ct: {
                                 type: 'integer'
