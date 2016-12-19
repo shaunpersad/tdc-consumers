@@ -10,7 +10,7 @@ const importSocialAffinities = require('./src/importSocialAffinities');
 const importBrands = require('./src/importBrands');
 
 const client = new elasticsearch.Client({
-    host: 'elasticsearch:9200',
+    host: '127.0.0.1:9200',
     log: 'info'
 });
 
