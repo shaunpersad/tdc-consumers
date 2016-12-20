@@ -50,6 +50,10 @@ async.waterfall([
         importBrands(client, next);
     }
 ], (err, count) => {
+    
+    if (err) {
+        throw err;
+    }
 
     console.log('Added', count, 'brands.');
 

@@ -53,6 +53,9 @@ module.exports = function importAttributes(client, done) {
     lineReader.eachLine('./data/attributes.txt', function(line, last, callback) {
 
         count++;
+        if (count < 6580271) {
+            return callback();
+        }
         
         let values = line.split('|');
 
