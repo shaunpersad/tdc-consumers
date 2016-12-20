@@ -53,8 +53,8 @@ module.exports = function importAttributes(client, done) {
     lineReader.eachLine('./data/attributes.txt', function(line, last, callback) {
 
         count++;
-        console.log('Line', count);
-        if (count < 6580271) {
+
+        if (count < 10511852) {
             return callback();
         }
         
